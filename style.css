@@ -1,0 +1,75 @@
+/* @font-face {
+    font-family: 'Bebas Neue';
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+} */
+
+/* body {
+	margin: 0;
+	padding: 0;
+	background: url("/Users/mhenryrichards/Documents/Bloom/bloom-bg.png") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.container {
+	margin: 100px auto;
+	text-align: center;
+} */
+
+body {
+	background-image: url('/assets/bloom-bg.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+	color: #1a001a;
+	margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #1a001a;
+	margin-bottom: 20px;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+	display: block;
+	font-size: 18px;
+	color: #1a001a;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+.petal {
+	position: absolute;
+	top: -50px;
+	width: 10px;
+	height: 10px;
+	/* border-radius: 50%; */
+	background-color: rgba(251, 140, 94, 0.3);
+	animation-name: petal-fall;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes petal-fall {
+	0% {
+		transform: translateY(-100px) rotateZ(0deg);
+	}
+	100% {
+		transform: translateY(100vh) rotateZ(360deg);
+	}
+}
